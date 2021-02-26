@@ -7,6 +7,7 @@ Created from https://developer.android.com/training/basics/firstapp
 - https://guides.github.com/introduction/flow/
 - https://github.com/futurice/android-best-practices
 - https://developer.android.com/studio/write/lint
+- https://material.io/
 
 ## Other Links
 

@@ -27,7 +27,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
         // Capture the layout's TextView and set the string as its text
         textView = findViewById(R.id.textView);
-        textView.setText("Loading...");
+        textView.setText("Sending that message into the DMs ;-)");
 
         Downloader downloader = new Downloader();
         downloader.execute(message);

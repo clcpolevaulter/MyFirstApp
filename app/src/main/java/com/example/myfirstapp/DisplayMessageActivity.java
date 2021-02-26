@@ -39,7 +39,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params) {
             Request request = new Request.Builder()
-                    .url("https://postman-echo.com/get?message=" + params[0])
+                    .url("https://postman-echo.com/get?msg=" + params[0])
                     .build();
 
             String string = "";

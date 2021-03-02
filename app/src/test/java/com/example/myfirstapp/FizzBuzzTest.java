@@ -14,14 +14,6 @@ public class FizzBuzzTest {
         assertMultipleOfThree(3 * 4);
     }
 
-    private void assertMultipleOfThree(int givenInput) {
-        //Act or When
-        String returnVal = FizzBuzz.calc(givenInput);
-
-        //Assert or Then
-        assertEquals("Fizz", returnVal);
-    }
-
     @Test
     public void shouldReturnBuzzFor5() {
         //Arrange or Given
@@ -29,14 +21,6 @@ public class FizzBuzzTest {
         assertMultipleOfFive(5 * 2);
 //        assertMultipleOfFive(5 * 3);
         assertMultipleOfFive(5 * 4);
-    }
-
-    private void assertMultipleOfFive(int givenInput) {
-        //Act or When
-        String returnVal = FizzBuzz.calc(givenInput);
-
-        //Assert or Then
-        assertEquals("Buzz", returnVal);
     }
 
     @Test
@@ -51,14 +35,6 @@ public class FizzBuzzTest {
         assertMultipleOf3And5(5 * 3 * 2);
     }
 
-    private void assertMultipleOf3And5(int givenInput) {
-        //Act or When
-        String returnVal = FizzBuzz.calc(givenInput);
-
-        //Assert or Then
-        assertEquals("FizzBuzz", returnVal);
-    }
-
     @Test
     public void shouldReturnInput() {
         //Arrange or Given
@@ -69,6 +45,30 @@ public class FizzBuzzTest {
 
         //Assert or Then
         assertEquals("" + givenInput, returnVal);
+    }
+
+    private void assertMultipleOfThree(int givenInput) {
+        //Act or When
+        String returnVal = FizzBuzz.calc(givenInput);
+
+        //Assert or Then
+        assertEquals("Fizz", returnVal);
+    }
+
+    private void assertMultipleOfFive(int givenInput) {
+        //Act or When
+        String returnVal = FizzBuzz.calc(givenInput);
+
+        //Assert or Then
+        assertEquals("Buzz", returnVal);
+    }
+
+    private void assertMultipleOf3And5(int givenInput) {
+        //Act or When
+        String returnVal = FizzBuzz.calc(givenInput);
+
+        //Assert or Then
+        assertEquals("FizzBuzz", returnVal);
     }
 
 }

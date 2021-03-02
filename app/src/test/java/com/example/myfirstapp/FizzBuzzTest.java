@@ -6,16 +6,16 @@ import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
     @Test
-    public void shouldReturnFizzFor3() {
+    public void shouldReturnFizzForMultiplesOf3() {
         //Arrange or Given
-        assertMultipleOfThree(3);
+        assertMultipleOfThree(3 * 1);
         assertMultipleOfThree(3 * 2);
         assertMultipleOfThree(3 * 3);
         assertMultipleOfThree(3 * 4);
     }
 
     @Test
-    public void shouldReturnBuzzFor5() {
+    public void shouldReturnBuzzForMultiplesOf5() {
         //Arrange or Given
         assertMultipleOfFive(5 * 1);
         assertMultipleOfFive(5 * 2);
@@ -24,7 +24,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturnFizzBuzzFor15() {
+    public void shouldReturnFizzBuzzForMultiplesOf15() {
         //Arrange or Given
         int leastCommonDenominator = 5 * 3;
         assertMultipleOf3And5(leastCommonDenominator * 1);

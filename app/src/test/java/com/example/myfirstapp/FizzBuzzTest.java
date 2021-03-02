@@ -26,13 +26,9 @@ public class FizzBuzzTest {
     @Test
     public void shouldReturnFizzBuzzFor15() {
         //Arrange or Given
-        assertMultipleOf3And5(5 * 3 * 1);
-    }
-
-    @Test
-    public void shouldReturnFizzBuzzFor30() {
-        //Arrange or Given
-        assertMultipleOf3And5(5 * 3 * 2);
+        int leastCommonDenominator = 5 * 3;
+        assertMultipleOf3And5(leastCommonDenominator * 1);
+        assertMultipleOf3And5(leastCommonDenominator * 2);
     }
 
     @Test

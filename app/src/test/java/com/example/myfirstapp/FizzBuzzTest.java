@@ -42,20 +42,16 @@ public class FizzBuzzTest {
     @Test
     public void shouldReturnFizzBuzzFor15() {
         //Arrange or Given
-        int givenInput = 5 * 3;
-
-        //Act or When
-        String returnVal = FizzBuzz.calc(givenInput);
-
-        //Assert or Then
-        assertEquals("FizzBuzz", returnVal);
+        assertMultipleOf3And5(5 * 3);
     }
 
     @Test
     public void shouldReturnFizzBuzzFor30() {
         //Arrange or Given
-        int givenInput = 30;
+        assertMultipleOf3And5(30);
+    }
 
+    private void assertMultipleOf3And5(int givenInput) {
         //Act or When
         String returnVal = FizzBuzz.calc(givenInput);
 

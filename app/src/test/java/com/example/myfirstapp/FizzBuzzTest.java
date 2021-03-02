@@ -9,9 +9,9 @@ public class FizzBuzzTest {
     public void shouldReturnFizzFor3() {
         //Arrange or Given
         assertMultipleOfThree(3);
-        assertMultipleOfThree(6);
-        assertMultipleOfThree(9);
-        assertMultipleOfThree(12);
+        assertMultipleOfThree(3 * 2);
+        assertMultipleOfThree(3 * 3);
+        assertMultipleOfThree(3 * 4);
     }
 
     private void assertMultipleOfThree(int givenInput) {
@@ -42,13 +42,13 @@ public class FizzBuzzTest {
     @Test
     public void shouldReturnFizzBuzzFor15() {
         //Arrange or Given
-        assertMultipleOf3And5(5 * 3);
+        assertMultipleOf3And5(5 * 3 * 1);
     }
 
     @Test
     public void shouldReturnFizzBuzzFor30() {
         //Arrange or Given
-        assertMultipleOf3And5(30);
+        assertMultipleOf3And5(5 * 3 * 2);
     }
 
     private void assertMultipleOf3And5(int givenInput) {

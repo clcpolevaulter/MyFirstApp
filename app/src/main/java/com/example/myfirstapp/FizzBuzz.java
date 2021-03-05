@@ -11,10 +11,7 @@ public class FizzBuzz {
         else if (i % 5 == 0) {
             return "Buzz";
         }
-        else if (i == 1){
-            return "1";
-        }
-        return null;
+        return "" + i;
     }
 
 }

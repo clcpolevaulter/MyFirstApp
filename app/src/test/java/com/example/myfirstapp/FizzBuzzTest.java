@@ -32,10 +32,21 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void shouldReturnInput() {
-        //Arrange or Given
-        int givenInput = 1;
+    public void shouldReturnInputForOtherPrimeNumbers() {
+        assertNotMultipleOfThreeOrFive(1);
+        assertNotMultipleOfThreeOrFive(2);
+        assertNotMultipleOfThreeOrFive(7);
+        assertNotMultipleOfThreeOrFive(11);
+        assertNotMultipleOfThreeOrFive(13);
+        assertNotMultipleOfThreeOrFive(17);
+        assertNotMultipleOfThreeOrFive(19);
+        assertNotMultipleOfThreeOrFive(23);
+        assertNotMultipleOfThreeOrFive(29);
+        assertNotMultipleOfThreeOrFive(31);
+        assertNotMultipleOfThreeOrFive(37);
+    }
 
+    private void assertNotMultipleOfThreeOrFive(int givenInput) {
         //Act or When
         String returnVal = FizzBuzz.calc(givenInput);
 
